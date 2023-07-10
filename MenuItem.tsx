@@ -53,6 +53,7 @@ const MultiLevelMenu = () => {
           <NavDropdown title={item.title} key={item.id}>
             {renderMenuItems(item.subItems)}
           </NavDropdown>
+         
         );
       } else {
         return (
@@ -65,10 +66,28 @@ const MultiLevelMenu = () => {
   };
 
   return (
+    <>
+    <Navbar bg="light" >
+    <Container>
+      <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
+      <Navbar.Toggle />
+      <Navbar.Collapse className="justify-content-end">
+        <Navbar.Text>
+          Signed in as: <a href="#login">Mark Otto</a>
+        </Navbar.Text>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
     <Router>
-      <Nav>
-        {renderMenuItems(menuItems)}
-      </Nav>
+
+    <Navbar bg="light" data-bs-theme="light">
+        <Container>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+          {renderMenuItems(menuItems)}
+          </Nav>
+        </Container>
+      </Navbar>
     <Routes>
       <Route path="/"  Component={DropDownSubMenu} />
       <Route path="/products"Component={DropDownSubMenu} />
@@ -76,6 +95,7 @@ const MultiLevelMenu = () => {
       <Route path="/products/clothing"Component={DropDownSubMenu} />
       </Routes>
     </Router>
+    </>
   );
 };
 
