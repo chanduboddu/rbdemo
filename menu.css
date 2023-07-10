@@ -1,0 +1,67 @@
+.navbar {
+    background-color: #807ffe !important;
+  }
+  .menu-bar {
+    padding-bottom: 0 !important;
+  }
+  .menu-bar .nav-item {
+    /* max-width: 150px;
+    word-wrap: break-word; */
+    background-color: #d1b38d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-right: 2px;
+    position: static;
+    text-align: center;
+  }
+  
+  .menu-bar .nav-item:hover {
+    background-color: #fff8dc;
+  }
+  
+  .menu-bar .dropdown-menu.show {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    border: none;
+    margin-top: unset;
+    margin-top: -4px;
+    background-color: #fff8dc;
+  }
+  .menu-bar .dropdown-menu.show .dropdown-item {
+    width: unset;
+  }
+  
+  .menu-bar .nav-link {
+    /* padding-bottom: 0.1em; */
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  .menu-bar .dropdown-item:hover {
+    background-color: transparent;
+  }
+  
+  .logo-1 {
+    display: none;
+  }
+  .logo-2 {
+    display: inline-block;
+  }
+  
+  .retrieve-btn {
+    background-image: linear-gradient(to top, #d1b38d, #fff8dc);
+    color: #000;
+    font-weight: bold;
+    border-color: #fff;
+  }
+  .dropdown-item {
+    font-size: 0.8em;
+  }
+  .menu-bar .dropdown-toggle::after {
+    content: none;
+  }
+  
+ .nav-tabs {
+  background-color: rgb(209, 179, 141) !important;
+ }
+  
