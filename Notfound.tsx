@@ -1,11 +1,21 @@
 import * as React from 'react';
 
- interface INotfoundProps {
+interface Item {
+  id: number;
+  name: string;
 }
-const Notfound: React.FunctionComponent<INotfoundProps> = (props) => {
+interface INotfoundProps {
+  item: Item;
+}
+const Notfound: React.FunctionComponent<INotfoundProps> = (  {item}) => {
   return (
     <>
-      <h3>Not foudn</h3>
+     <div>
+      {items.map((item) => (
+        <ItemComponent key={item.id} item={item} />
+      ))}
+    </div>
+
     </>
   );
 }
